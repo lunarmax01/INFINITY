@@ -99,4 +99,14 @@ body::-webkit-scrollbar {
   width: 315px;
   height: 75px;
 }
-
+/* img object */
+#object1{
+  background: url(src/material/img/object1.png);
+}
+#object2{
+  background: url(src/material/img/object2.png);
+}
+#roboto{
+  background: url(src/material/img/roboto-object.png);
+  background-repeat: no-repeat;
+}

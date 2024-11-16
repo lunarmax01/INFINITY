@@ -1,23 +1,20 @@
 import React from 'react';
-import object1 from '../../material/img/object1.png';
-import object2 from '../../material/img/object2.png';
-import Robotoobject from '../../material/img/roboto-object.png';
 import 'animate.css';
 
 function Object() {
     return (
         <>
-            <div className='w-[100%] h-[100vh]  overflow-hidden'>
+            <div className='w-[100%] h-[100vh] overflow-hidden'>
                 <div className=' animate-pulse'>
-                    <img className='w-[400px] relative top-[250px] right-24 animate__animated animate__fadeInTopLeft' src={object1} alt="Object 1" />
+                    <div id='object1' className='w-[510px] h-[500px] relative top-[180px] right-24 animate__animated animate__fadeInTopLeft'></div>
                 </div>
                 <div className=' animate-pulse'>
-                    <img className='w-[500px] relative bottom-[250px] left-[1120px] animate__animated animate__fadeInTopRight' src={object2} alt="Object 1" />
+                    <div id='object2' className='w-[600px] h-[400px] relative bottom-[390px] left-[1020px] animate__animated animate__fadeInTopRight'></div>
                 </div>
                 <div className=''>
-                    <img className='w-[150px] relative bottom-[150px] left-[1450px] animate__animated animate__fadeInRight'  src={Robotoobject} alt="" />
+                    <div id='roboto' className='w-[170px] h-[500px] relative bottom-[460px] left-[1450px] animate__animated animate__fadeInRight '></div>
                 </div>
-            </div>
+            </div> 
         </>
     );
 }
