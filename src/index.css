@@ -1,0 +1,102 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* scrollbar none */
+body::-webkit-scrollbar {
+  width: 0;
+}
+/* home sci-fi */
+
+.path {
+  animation: draw 15s infinite;
+  animation-timing-function: linear;
+}
+
+.path-2 {
+  animation: draw 20s infinite;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes draw {
+  0% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+/* hom sci-fi button */
+
+/* From Uiverse.io by TemRevil */ 
+.sci-fi-button {
+  color: #00d4ff;
+  font-size: 22px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, 0.457);
+  border: 2px solid #00d4ff;
+  border-radius: 10px;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow:
+    0 0 10px rgba(0, 212, 255, 0.7),
+    0 0 20px rgba(0, 212, 255, 0.5),
+    inset 0 0 15px rgba(0, 212, 255, 0.7);
+  transition: all 0.3s ease;
+}
+.sci-fi-button:active {
+  box-shadow:
+    0 0 5px rgba(0, 212, 255, 0.7),
+    0 0 10px rgba(0, 212, 255, 0.5),
+    inset 0 0 15px rgba(0, 212, 255, 0.7);
+  scale: 0.9;
+}
+
+.sci-fi-button::before,
+.sci-fi-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00d4ff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.sci-fi-button::before {
+  top: -8px;
+  left: -8px;
+  right: 8px;
+  bottom: 8px;
+}
+
+.sci-fi-button::after {
+  top: 8px;
+  left: 8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.sci-fi-button:hover::before,
+.sci-fi-button:hover::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+#imgnikname{
+  background: url(src/material/img/text-1731764950662.png);
+  background-repeat: no-repeat;
+  width: 315px;
+  height: 75px;
+}
+
