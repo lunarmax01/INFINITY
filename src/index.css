@@ -94,19 +94,19 @@ body::-webkit-scrollbar {
   opacity: 1;
 }
 #imgnikname{
-  background: url(src/material/img/text-1731764950662.png);
+  background-image: url(src/material/img/text-1731764950662.png);
   background-repeat: no-repeat;
   width: 315px;
   height: 75px;
 }
 /* img object */
 #object1{
-  background: url(src/material/img/object1.png);
+  background-image: url(src/material/img/object1.png);
 }
 #object2{
-  background: url(src/material/img/object2.png);
+  background-image: url(src/material/img/object2.png);
 }
 #roboto{
-  background: url(src/material/img/roboto-object.png);
+  background-image: url(src/material/img/roboto-object.png);
   background-repeat: no-repeat;
 }
